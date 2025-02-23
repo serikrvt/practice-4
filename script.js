@@ -34,16 +34,6 @@ for (const element of fruits) {
 // 4. Использование `while` для поиска первого четного числа  
 // Дан массив чисел.Используя`while`, найди и выведи в консоль первое четное число.
 
-  // const numbers2 = [1, 3, 7, 8, 9, 12];
-  // let i=0
-  // while(numbers2<numbers2.length){
-  //   i%2===0
-  //   i++
-  //   console.log(l);
-    
-  // }
-
-
 
 // 5. Использование `do while` для вывода всех элементов массива  
 // Дан массив чисел.Используя`do while`, выведи в консоль все элементы массива.
@@ -73,6 +63,12 @@ const users = [
   { name: "Елена", age: 22 }
 ];
 
+const filterUsers=users.filter(order=>order.age>18).sort((a,b)=>a.name-b.name).map((obj) => `${obj.name} `)
+console.log(filterUsers);
+
+
+
+
 
 
 // 2. Найти средний рейтинг книг определенного жанра
@@ -87,6 +83,7 @@ const books = [
   { title: "Мастер и Маргарита", genre: "драма", rating: 9.0 },
   { title: "Три тела", genre: "фантастика", rating: 8.8 }
 ];
+const filterBooks=books.filter(order=>order.genre==="фантастика").map(num=>num.rating/2)
 
 
 // 3. Преобразовать массив товаров: оставить только названия в верхнем регистре  

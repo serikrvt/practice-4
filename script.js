@@ -2,9 +2,9 @@
 // Дан массив чисел.Используя`for in`, выведи в консоль индексы элементов массива.
 
 const numbers = [10, 20, 30, 40, 50];
-for (const element in numbers){
+for (const element in numbers) {
   console.log(element);
-  
+
 }
 
 
@@ -23,14 +23,26 @@ for (const element of fruits) {
 
 // 3. Использование `for` для суммирования чисел в массиве  
 // Дан массив чисел.Используя`for`, вычисли сумму всех элементов и выведи результат.
+// const numbers1 = [5, 10, 15, 20, 25];
+// for(const element in numbers1){
+//    numbers1.replace((acc, curr)=>acc+curr,0)
+// }
+// console.log();
 
-const numbers1 = [5, 10, 15, 20, 25];
 
 
 // 4. Использование `while` для поиска первого четного числа  
 // Дан массив чисел.Используя`while`, найди и выведи в консоль первое четное число.
 
-// const numbers = [1, 3, 7, 8, 9, 12];
+  // const numbers2 = [1, 3, 7, 8, 9, 12];
+  // let i=0
+  // while(numbers2<numbers2.length){
+  //   i%2===0
+  //   i++
+  //   console.log(l);
+    
+  // }
+
 
 
 // 5. Использование `do while` для вывода всех элементов массива  

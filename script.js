@@ -63,7 +63,7 @@ const users = [
   { name: "Елена", age: 22 }
 ];
 
-const filterUsers=users.filter(order=>order.age>18).sort((a,b)=>a.name-b.name).map((obj) => `${obj.name} `)
+const filterUsers = users.filter(order => order.age > 18).sort((a, b) => a.name - b.name).map((obj) => `${obj.name} `)
 console.log(filterUsers);
 
 
@@ -83,7 +83,9 @@ const books = [
   { title: "Мастер и Маргарита", genre: "драма", rating: 9.0 },
   { title: "Три тела", genre: "фантастика", rating: 8.8 }
 ];
-const filterBooks=books.filter(order=>order.genre==="фантастика").map(num=>num.rating/2)
+const filterBooks = books.filter(order => order.genre === "фантастика").map(num => num.rating / 2)
+console.log(filterBooks);
+
 
 
 // 3. Преобразовать массив товаров: оставить только названия в верхнем регистре  
@@ -98,6 +100,9 @@ const products = [
   { name: "Ноутбук", price: 3000 },
   { name: "Клавиатура", price: 700 }
 ];
+const filterProducts=products.filter(tovar=>tovar.price>1000).map(name=>name.name).join(',').toUpperCase()
+console.log(filterProducts);
+
 
 
 // 4. Найти самого молодого сотрудника с зарплатой выше 50000  

@@ -33,7 +33,12 @@ for (const element of fruits) {
 
 // 4. Использование `while` для поиска первого четного числа  
 // Дан массив чисел.Используя`while`, найди и выведи в консоль первое четное число.
-
+  while(i<numbers.length){
+    i%2===0
+    console.log(i);
+    i++
+    
+  }
 
 // 5. Использование `do while` для вывода всех элементов массива  
 // Дан массив чисел.Используя`do while`, выведи в консоль все элементы массива.
@@ -44,7 +49,11 @@ for (const element of fruits) {
 // 6. Использование `for` для создания нового массива с удвоенными значениями  
 // Дан массив чисел.Используя`for`, создай новый массив, в котором все элементы удвоены.Выведи новый массив в консоль.
 
-// const numbers = [2, 4, 6, 8];
+const numbers3 = [2, 4, 6, 8];
+for(let i=0; i<numbers3.length; i++){
+  i*2
+  i++
+}
 
 
 
@@ -100,7 +109,7 @@ const products = [
   { name: "Ноутбук", price: 3000 },
   { name: "Клавиатура", price: 700 }
 ];
-const filterProducts=products.filter(tovar=>tovar.price>1000).map(name=>name.name).join(',').toUpperCase()
+const filterProducts = products.filter(tovar => tovar.price > 1000).map(name => name.name).join(',').toUpperCase()
 console.log(filterProducts);
 
 
@@ -119,6 +128,8 @@ const employees = [
   { name: "Марина", age: 23, salary: 48000 },
   { name: "Игорь", age: 28, salary: 52000 }
 ];
+filterEmployees = employees.filter(salary => salary.salary > 500)
+console.log(filterEmployees);
 
 
 // 5. Найти все жанры фильмов без повторений (используем `map`, `flat`, `Set`)  
@@ -134,4 +145,7 @@ const movies = [
   { title: "Фильм 3", genres: ["драма", "фантастика"] },
   { title: "Фильм 4", genres: ["ужасы", "триллер"] }
 ];
+const flatMovies=movies.flat(Infinity).Set(...employees)
+console.log(flatMovies);
+
 

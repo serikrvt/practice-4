@@ -33,13 +33,13 @@ for (const element of fruits) {
 
 // 4. Использование `while` для поиска первого четного числа  
 // Дан массив чисел.Используя`while`, найди и выведи в консоль первое четное число.
-  while(i<numbers.length){
-    i%2===0
-    console.log(i);
-    i++
-    
-  }
 
+while (numbers < numbers.length) {
+  if (num % 2 === 0) {
+    console.log(num + 'even number');
+
+  }
+}
 // 5. Использование `do while` для вывода всех элементов массива  
 // Дан массив чисел.Используя`do while`, выведи в консоль все элементы массива.
 
@@ -50,8 +50,8 @@ for (const element of fruits) {
 // Дан массив чисел.Используя`for`, создай новый массив, в котором все элементы удвоены.Выведи новый массив в консоль.
 
 const numbers3 = [2, 4, 6, 8];
-for(let i=0; i<numbers3.length; i++){
-  i*2
+for (let i = 0; i < numbers3.length; i++) {
+  i * 2
   i++
 }
 
@@ -145,7 +145,7 @@ const movies = [
   { title: "Фильм 3", genres: ["драма", "фантастика"] },
   { title: "Фильм 4", genres: ["ужасы", "триллер"] }
 ];
-const flatMovies=movies.flat(Infinity).Set(...employees)
+const flatMovies = movies.flat(Infinity) //.Set(...employees)
 console.log(flatMovies);
 
 

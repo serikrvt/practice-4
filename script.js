@@ -23,11 +23,13 @@ for (const element of fruits) {
 
 // 3. Использование `for` для суммирования чисел в массиве  
 // Дан массив чисел.Используя`for`, вычисли сумму всех элементов и выведи результат.
-// const numbers1 = [5, 10, 15, 20, 25];
-// for(const element in numbers1){
-//    numbers1.replace((acc, curr)=>acc+curr,0)
-// }
-// console.log();
+
+const numbers1 = [5, 10, 15, 20, 25];
+let sum =0
+for(const num of numbers1){
+   sum+=num
+}
+console.log(sum);
 
 
 
@@ -43,7 +45,11 @@ while (numbers < numbers.length) {
 // 5. Использование `do while` для вывода всех элементов массива  
 // Дан массив чисел.Используя`do while`, выведи в консоль все элементы массива.
 
-// const numbers = [3, 6, 9, 12, 15];
+const numbers4 = [3, 6, 9, 12, 15];
+do{
+
+} while(i<numbers4.length)
+
 
 
 // 6. Использование `for` для создания нового массива с удвоенными значениями  
